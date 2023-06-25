@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom"
+    tools:context=".SettingsActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="317dp"
+        android:layout_height="322dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_speed="1.10"
+        app:lottie_rawRes="@raw/user" />
+
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="NULL@gmail.com"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/darkGray"
+        android:foregroundGravity="center"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/deleteAllButton"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                android:drawableEnd="@drawable/baseline_delete_forever_24"
+                android:elevation="15dp"
+                android:gravity="center"
+                android:text="Delete All Tasks"
+                android:textAllCaps="false"
+                android:textColor="@color/textColor"
+                android:textSize="17sp"
+                app:backgroundTint="@color/blue"
+                app:shapeAppearanceOverlay="@style/Button5" />
+
+            <Button
+                android:id="@+id/passwordChangeButton"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                android:elevation="15dp"
+                android:gravity="center"
+                android:text="Change Password"
+                android:drawableEnd="@drawable/baseline_key_24"
+                android:textAllCaps="false"
+                android:textColor="@color/textColor"
+                android:textSize="17sp"
+                app:backgroundTint="@color/blue"
+                app:shapeAppearanceOverlay="@style/Button5" />
+
+
+            <Button
+                android:id="@+id/deleteAccountButton"
+                android:layout_width="188dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                android:elevation="15dp"
+                android:gravity="center"
+                android:text="Delete Account"
+                android:textAllCaps="false"
+                android:textColor="@color/textColor"
+                android:textSize="17sp"
+                app:backgroundTint="#dc143c"
+                app:shapeAppearanceOverlay="@style/Button5" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/logOutButton"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="15dp"
+        android:gravity="center"
+        android:text="Log Out"
+        android:textAllCaps="false"
+        android:textColor="@color/textColor"
+        android:textSize="17sp"
+        app:backgroundTint="@color/blue"
+        android:drawableEnd="@drawable/logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:shapeAppearanceOverlay="@style/Button5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

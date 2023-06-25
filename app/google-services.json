@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "916719188093",
+    "project_id": "daily-to-do-51252",
+    "storage_bucket": "daily-to-do-51252.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916719188093:android:f08e14736c2cf8ede45914",
+        "android_client_info": {
+          "package_name": "com.furkankavak.dailytodo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916719188093-afm0jin0the7c8khbecbi9h92e3l14ft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlWSabGjgipCmvBbZbOAoO2e9dQFpJs1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916719188093-afm0jin0the7c8khbecbi9h92e3l14ft.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

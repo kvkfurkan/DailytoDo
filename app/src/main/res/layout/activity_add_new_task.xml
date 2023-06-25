@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom"
+    tools:context=".AddNewTaskActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        tools:context=".AddNewTaskActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/darkGray"
+            android:foregroundGravity="center"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/taskLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/darkGray"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="25dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:hint="Type your task"
+                        android:textColorHint="@color/darkWhite"
+                        app:boxStrokeColor="#4E4A4A"
+                        app:boxStrokeWidth="1dp"
+                        app:shapeAppearanceOverlay="@style/Button4">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/enterTask"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textWebEditText"
+                            android:minHeight="48dp"
+                            android:textColor="@color/darkWhite"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/updateLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkGray"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="25dp"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:hint="Edit your task"
+                        android:textColorHint="@color/darkWhite"
+                        app:boxStrokeColor="#4E4A4A"
+                        app:boxStrokeWidth="1dp"
+                        app:shapeAppearanceOverlay="@style/Button4">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTask"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textWebEditText"
+                            android:minHeight="48dp"
+                            android:textColor="@color/darkWhite"
+                            android:textColorHint="@color/darkWhite"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:elevation="15dp"
+                    android:gravity="center"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp"
+                    app:backgroundTint="@color/blue"
+                    app:shapeAppearanceOverlay="@style/Button5" />
+
+                <Button
+                    android:id="@+id/updateButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:elevation="15dp"
+                    android:gravity="center"
+                    android:text="Update"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp"
+                    android:visibility="gone"
+                    app:backgroundTint="@color/blue"
+                    app:shapeAppearanceOverlay="@style/Button5" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_marginTop="25dp"
+            android:layout_width="287dp"
+            android:layout_height="277dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/edit" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
